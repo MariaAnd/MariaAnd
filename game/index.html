@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zombie Run</title>
+    <link rel="stylesheet" href="css/reset_css.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script type="text/javascript" src="js/jquery.2.1.1.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="sound sound-off"></div>
+    <div id="menu" class="menu">
+        <div id="progress" class="progress">
+            <div id="percent" class="percent">Downloading: <span id="p"></span></div>
+            <progress id="progress-bar" class="progress-bar" value="0"></progress>
+        </div>
+        <div id="main" class="nav">
+            <ul>
+                <li><a href="javascript:void(0)" class="button play">Start Game</a></li>
+                <li><a href="javascript:void(0)" class="button rules">Rules</a></li>
+            </ul>
+        </div>
+        <div id="rules" class="guide">
+            <ul>
+                <li class="rule">Welcome to Zombie Runner!</li>
+                <li class="rule">Try to run as many meters as you can.</li>
+                <li class="rule">Be careful, keep away from water and fire.</li>
+                <li class="rule">Press space key to jump.</li>
+                <li class="rule">Good luck!</li>
+            </ul>
+            <a href="javascript:void(0)" class="button back">Back</a>
+        </div>
+    </div>
+    <canvas id="canvas" width="800" height="480">
+        <p>You're browser does not support the required functionality to play this game.</p>
+        <p>Please update to a modern browser such as <a href="www.google.com/chrome/‎">Google Chrome</a> to play.</p>
+    </canvas>
+    <div id="game-over">
+        <h2>You ran <span id="score"></span> meters!</h2>
+        <a href="javascript:void(0)" class="button restart">Try again?</a>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

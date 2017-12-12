@@ -1,0 +1,158 @@
+body {
+    font-family: arial, sans-serif;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 800px;
+    height: 480px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    z-index: 1;
+    width: 800px;
+    height: 480px;
+    box-sizing: border-box;
+}
+
+#game-over {
+    display: none;
+    text-align: center;
+    padding-top: 92px;
+    z-index: 7;
+    width: 800px;
+    height: 480px;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+li {
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.menu {
+    position: absolute;
+    width: 800px;
+    height: 480px;
+    border: 1px solid black;
+    z-index: 2;
+    text-align: center;
+    background-color: grey;
+}
+
+.menu {
+    background-image: url('../imgs/menu-bg.png');
+}
+
+.progress {
+    height: 12%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.percent {
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.progress-bar {
+    width: 200px;
+}
+
+.sound {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.sound-on {
+    background-image: url('../imgs/soundOn.png');
+    background-repeat: no-repeat;
+}
+
+.sound-off {
+    background-image: url('../imgs/soundOff.png');
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: none;
+    height: 60%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #AA2666;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: #FB1886;
+    background-image: linear-gradient(to bottom, #FB1886 0%, #B30D5D 100%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #B30D5D;
+    background-image: linear-gradient(to bottom, #B30D5D 0%, #FB1886 100%);
+}
+
+.guide {
+    display: none;
+    line-height: 30px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.guide li {
+    padding: 5px 0;
+}
+
+.rule{
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.back, .back:hover {
+    margin-top: 10px;
+}
