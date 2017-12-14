@@ -1,0 +1,187 @@
+@media (max-width: 1023px) {
+
+    /*Menu for tablets and mobiles*/
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        /*display: none;*/
+        order: 2;
+        align-self: flex-start;
+    }
+
+    .mobile-menu{
+        display: block;
+        order:1;
+        margin:25px 0;
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    .button-toggle, .button-close{
+        font-size: 1.5rem;
+        color:#000000;
+    }
+
+    .button-close{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+        font-size: 1rem;
+    }
+
+    .nav .nav-item{
+        display: block;
+        line-height: 1.2rem;
+        color:#000000;
+        text-transform: uppercase;
+        margin: 10px 20px;
+    }
+
+    .toggle:checked ~ .toggle-container .button-close{
+        display: block;
+    }
+
+    .toggle:checked ~ .toggle-container .button-toggle{
+        display: none;
+    }
+
+    .toggle:checked ~ .nav{
+        display: block;
+    }
+
+    /*Menu for tablets and mobiles end*/
+
+    html{
+        font-size: 18px;
+    }
+
+    .info{
+        width:80%;
+        order:1;
+    }
+
+    .hero{
+        width:20%;
+        order:2;
+        align-self: flex-end;
+    }
+
+    .hero img{
+        width:100%;
+    }
+
+    .features{
+        background: none;
+    }
+
+    .features-info .feature{
+        width: 100%;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .about .wrapper{
+        display: block;
+    }
+
+    .about div{
+        text-align: center;
+    }
+
+    .about .avatar{
+        margin-top:0;
+    }
+
+    .about .about-game{
+        padding:0;
+    }
+}
+
+@media (max-width: 767px) {
+    html{
+        font-size: 20px;
+    }
+
+    .logo{
+
+    }
+
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .banner h3{
+        display: none;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        padding: 50px 0;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    .info{
+        order:1;
+        padding: 0;
+    }
+
+    .hero{
+    display: none;
+    }
+
+    .browsers{
+        display: none;
+    }
+
+    .feature::before{
+        display: none;
+    }
+
+    .contacts h4{
+        padding: 0 20px;
+    }
+
+    .contacts form{
+        padding:20px;
+        width:100%;
+    }
+
+    .contacts label{
+        margin-right:20px;
+    }
+
+    .features, .contacts, .gallery, .about{
+        padding-bottom: 50px;
+    }
+
+    footer{
+        padding: 30px 0;
+    }
+
+    footer a{
+        font-size: 1.5rem;
+        line-height: 3rem;
+        width:3rem;
+    }
+
+}
+
+@media (max-width: 419px) {
+    .logo {
+        display: none;
+    }
+
+}
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zombie Run</title>
+    <link rel="stylesheet" href="css/reset_css.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+</head>
+<body>
+<header id="home">
+    <div class="wrapper">
+        <div class="logo"><img src="imgs/logo.png"></div>
+        <nav class="menu">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#gallery">gallery</a>
+            <a href="#about">about</a>
+            <a href="#contacts">contact</a>
+        </nav>
+        <div class="mobile-menu">
+            <input id="toggle" class="toggle" type="checkbox">
+            <label class="toggle-container" for="toggle">
+                <span class="button-toggle"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                <span class="button-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </label>
+            <nav class="nav">
+                <a href="#home" class="nav-item">home</a>
+                <a href="#features" class="nav-item">features</a>
+                <a href="#gallery" class="nav-item">gallery</a>
+                <a href="#about" class="nav-item">about</a>
+                <a href="#contacts" class="nav-item">contact</a>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="banner">
+        <div class="wrapper">
+            <div class="info">
+                <h1>Try To Survive In A Post-Apocalyptic World</h1>
+                <h3>Run as far as you can and keep away from fire</h3>
+                <p>Play for free now</p>
+                <button class="button" onClick='location.href="game/index.html"'>Play</button>
+            </div>
+            <div class="hero">
+                <img src="imgs/hero.png">
+            </div>
+        </div>
+    </section>
+    <section class="browsers">
+        <div class="wrapper">
+            <a href="#" class="browser">Google Chrome</a>
+            <a href="#" class="browser">Opera</a>
+            <a href="#" class="browser">Firefox</a>
+            <a href="#" class="browser">Internet Explorer</a>
+            <a href="#" class="browser">Microsoft Edge</a>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="wrapper">
+            <div class="features-info">
+                <ul>
+                    <li class="feature">
+                        <h4>Zombie apocalypse theme</h4>
+                        <p>Zombie apocalypse stories are inescapable; they’re contagious, spreading rapidly from their origins in early 20th-century literature and film to completely invade modern popular culture. If you’re a zombie fan, it’s a fine game for you.</p>
+                    </li>
+                    <li class="feature">
+                        <h4>Playable through the browser</h4>
+                        <p>The game is fully playable through the browser and does not depend on additional software or a client. This makes it possible to virtually play from anywhere, be it the workplace, school or cafe. </p>
+                    </li>
+                    <li class="feature">
+                        <h4>HTML5 Canvas game</h4>
+                        <p>The &lt;canvas&gt; element was used to implement this game. This element is perfect for making games in HTML, because it offers all the functionality you need for making games. JavaScript helps to draw, write, insert images, and more, onto the &lt;canvas&gt;.So everything is created right on the web page in real time.</p>
+                    </li>
+                    <li class="feature">
+                        <h4>Simple control</h4>
+                        <p>Press space button on your keyboard to make player jump from one block to another.</p>
+                    </li>
+                    <li class="feature">
+                        <h4>Free-to-play</h4>
+                        <p>You don't need to pay, play for free.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="wrapper">
+        <video controls="controls" class="video">
+            <source src="video/video.mp4">
+            Video is not supported by your browser.
+        </video>
+        </div>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="imgs/screenshot1.jpg" alt="Image 1"></li>
+                    <li><img src="imgs/screenshot2.jpg" alt="Image 2"></li>
+                    <li><img src="imgs/screenshot3.jpg" alt="Image 3"></li>
+                    <li><img src="imgs/screenshot4.jpg" alt="Image 4"></li>
+                    <li><img src="imgs/screenshot5.jpg" alt="Image 5"></li>
+                    <li><img src="imgs/screenshot6.jpg" alt="Image 6"></li>
+                </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            <p class="jcarousel-pagination"></p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About</h2>
+        <div class="wrapper">
+            <div>
+                <img src="imgs/avatar.jpg" class="avatar">
+            </div>
+            <div class="about-game">
+                <h4>Some info about the game and me</h4>
+                <p>Hello, my name is Maria and I am a frontend developer.</p>
+                <p>I didn't always write code. In fact, I never thought I would ever write a single line of it when I first started learning web technologies. As soon as I began to study, I got a lot of new information, unknown and unaccustomed for me, but also fascinating and enthralling. Over time, I found myself not only asking questions, but trying to answer them for myself because it became a necessity. In the end, that led to learning HTML, which led to CSS, which led to jQuery and JavaScript.</p>
+                <p>Now I'm a student of Rolling Scopes School and I really appreciate the fact, that every lecturer tries to do his or her best and to give students as much information as he or she can. Incredible atmosphere inspires to deepen knowledge and helps to make new friends.</p>
+                <p>As one of the Rolling Scopes School's tasks I'd like to introduce "Zombie Run". "Zombie Run" is the game, where you should help Irma (she is the main and the only character) to stay alive. Unfortunately, after Apocalypse, everything around Irma is ruined: damaged houses, debris and even bones and skulls she will meet on her way. Some flowers and grass make the picture more encouraging, but you still should be careful and escape water and fire.</p>
+                <p>I hope you will enjoy this game. Good luck!</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <h2>Contact</h2>
+        <h4>If you have something to say or you want to ask some questions, please, fill the form below.</h4>
+        <div class="wrapper">
+            <form>
+                <div class="form-field">
+                <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" pattern="^[a-zA-Z]{2,20}$"
+                           title="Latin characters only, min length is 2 symbols, max length is 20 symbols." required>
+                </div>
+                <div class="form-field">
+                <label for="e-mail">Email:</label>
+                    <input type="email" name="e-mail" id="e-mail" required>
+                </div>
+                <div class="form-field">
+                <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+               </div>
+                <div class="submit">
+                <input class="button" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+<div class="wrapper">
+    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+</div>
+</footer>
+</body>
+</html>
