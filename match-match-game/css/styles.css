@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    background: #fd9fc3;
+    max-width: 1020px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    font-weight: 700;
+    color:#fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-bottom:5px solid #f05ca3;
+    position: relative;
+}
+
+#timer{
+    max-width:250px;
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 16px;
+    padding:15px;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 400;
+}
+
+/*Header end*/
+
+main{
+    display:flex;
+    justify-content: center;
+}
+
+/*Memory Board*/
+
+#memory_board{
+    background:#fad6e0;
+    max-width:770px;
+    padding:25px;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0 0 0 20px;
+}
+
+#memory_board > div{
+    width:100px;
+    height:100px;
+    margin:10px;
+    cursor:pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/*Memory Board end*/
+
+/*Side Bar*/
+
+#side_bar{
+    max-width:250px;
+    background:#fad6e0 url('images/candies.png') no-repeat center bottom ;
+    border-left:5px solid #f05ca3;
+    padding:25px;
+    border-radius: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+#side_bar button{
+    width: 100%;
+    font-size:18px;
+    margin:10px auto;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    background: #f6adc5;
+    border: 1px solid #cf7ba6;
+    box-shadow: 0 3px 0 #cf7ba6;
+    position: relative;
+    color:#7e3328;
+    font-weight: 700;
+}
+
+#side_bar button:hover {
+    box-shadow: 0 0 #cf7ba6;
+    top: 3px;
+}
+
+/*Side Bar end*/
+
+/*Pop up*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+#overlay_card_shirts,
+#overlay_level, #overlay_congrats{
+    display:none;
+}
+
+.popup {
+    top: 10%;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    margin:0 auto;
+    max-width: 600px;
+    position: absolute;
+    padding: 15px 20px;
+    background: #fefefe;
+    z-index: 2;
+    border-radius: 10px;
+    color:#7e3328;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #f05ca3;
+    margin-bottom:30px;
+    line-height: 30px;
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+p, form{
+    margin:20px 0 40px;
+}
+
+.close {
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background-color: #f6adc5;
+    cursor: pointer;
+    outline: none;
+}
+
+.close:before {
+    color: #ffffff;
+    content: "X";
+    font-family:  Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.close:hover {
+    background-color: #f05ca3;
+}
+
+/*Pop up end*/
+
+/*Card's front and back*/
+
+.front{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 0deg );
+    backface-visibility: hidden;
+    transition: transform .25s linear 0s;
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+}
+
+.back{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 180deg );
+    background: #ffffff;
+    backface-visibility: hidden;
+    opacity:1;
+    transition: transform .25s linear 0s, opacity .25s linear 0s;
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+    font-size:80px;
+    text-align:center;
+    line-height: 100px;
+    color:#c4996c;
+    font-weight: 700;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*Card's front and back*/

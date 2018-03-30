@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Match Match Game</title>
+    <link rel="stylesheet" href="css/reset_css.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Match Match Game<span id="timer"></span></h1>
+</header>
+<main>
+    <div id="memory_board">
+    </div>
+    <div id="side_bar">
+        <button onclick="document.getElementById('overlay_rules').style.display='block';">Rules</button>
+        <button onclick="document.getElementById('overlay_card_shirts').style.display='block';">Card back</button>
+        <button onclick="document.getElementById('overlay_level').style.display='block';">Level</button>
+        <button onclick="generateBoard()">New game</button>
+    </div>
+    <div class="overlay" id="overlay_rules">
+        <div class="popup">
+            <h2>Welcome to Match Match Game!<br>Please, read the rules:</h2>
+            <ul>
+                <li>Turn over any two cards.</li>
+                <li>If the two cards match, they will disappear.</li>
+                <li>If they don't match, they will turn back over.</li>
+                <li>Remember what was on each card and where it was.</li>
+                <li>The game is over when all the cards have been matched.</li>
+            </ul>
+            <button class="close" title="Close"
+                    onclick="document.getElementById('overlay_rules').style.display='none';"></button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay_card_shirts">
+        <div class="popup">
+            <h2>Choose a card shirt:</h2>
+            <form>
+                <input type="radio" name="card_shirt" value="1" id="shirt_donut" onclick="changeCartShirt()"
+                       checked><label for="shirt_donut"><img src="images/donut.png"></label>
+                <input type="radio" name="card_shirt" value="2" id="shirt_cake" onclick="changeCartShirt()"><label
+                    for="shirt_cake"><img src="images/cake.png"></label>
+                <input type="radio" name="card_shirt" value="3" id="shirt_cupcake" onclick="changeCartShirt()"><label
+                    for="shirt_cupcake"><img src="images/cupcake.png"></label>
+            </form>
+            <button class="close" title="Close"
+                    onclick="document.getElementById('overlay_card_shirts').style.display='none';"></button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay_level">
+        <div class="popup">
+            <h2>Choose a game level:</h2>
+            <form>
+                <input type="radio" name="level" value="1" id="level_easy" onclick="changeLevel()"><label
+                    for="level_easy">Easy (6x2)</label>
+                <input type="radio" name="level" value="2" id="level_normal" onclick="changeLevel()" checked><label
+                    for="level_normal">Normal (6x4)</label>
+                <input type="radio" name="level" value="3" id="level_hard" onclick="changeLevel()"><label
+                    for="level_hard">Hard (6x6)</label>
+            </form>
+            <button class="close" title="Close"
+                    onclick="document.getElementById('overlay_level').style.display='none';"></button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay_congrats">
+        <div class="popup">
+            <h2>Congratulations! You won the game!</h2>
+            <p>If you want to start a new game, please, press the button NEW GAME</p>
+            <button class="close" title="Close"
+                    onclick="document.getElementById('overlay_congrats').style.display='none';"></button>
+        </div>
+    </div>
+</main>
+<script>generateBoard();
+</script>
+</body>
+</html>
