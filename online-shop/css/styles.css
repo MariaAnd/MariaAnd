@@ -782,7 +782,9 @@ h5 {
 .goods_gallery .good .shopping-bag {
     width: 3rem;
     height: 3rem;
-    background: url("../images/sprite-main.png") no-repeat -4px -4px;
+    background: url("../images/sprite-main.png") no-repeat;
+	background-size: contain;
+    margin-bottom: 5px;
 }
 
 .goods_gallery .good:hover img {
